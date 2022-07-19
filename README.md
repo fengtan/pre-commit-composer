@@ -17,7 +17,7 @@ Add to your `.pre-commit-config.yaml`:
 
 ## How to test it
 
-**1. Get an environment with Composer, Git and Pre-commit**
+**1. Get an environment with Composer and Pre-commit**
 
 ```sh
 $ docker run --rm -it php:7.4-cli /bin/sh
