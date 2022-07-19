@@ -28,7 +28,7 @@ $ git config --global user.email "foo@example.com"
 $ git config --global user.name "Foo Bar"
 ```
 
-**2. Create a new project with Composer (say, Laravel) and add our pre-commit hook**
+**2. Create a Composer project and add our pre-commit hook**
 
 ```sh
 $ composer create-project laravel/laravel laravel 4.2.* --no-plugins
