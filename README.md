@@ -28,7 +28,7 @@ $ git config --global user.email "foo@example.com"
 $ git config --global user.name "Foo Bar"
 ```
 
-**2. Create a Composer project and add our pre-commit hook**
+**2. Create a Composer project, initialize a Git repo, add our pre-commit hook**
 
 ```sh
 $ composer create-project laravel/laravel laravel 4.2.* --no-plugins
@@ -50,12 +50,12 @@ $ pre-commit install
 $ echo garbage >> composer.lock
 ```
 
-**4. Try to commit: the hook will run and fail because of the invalid `composer.lock`**
+**4. Commit changeset: the hook will run and fail because of the invalid `composer.lock` ; the commit will abort**
 
 ```
 $ git add -A
 $ git commit
-[INFO] Initializing environment for https://github.com/fengtan/composer.
+[INFO] Initializing environment for https://github.com/fengtan/pre-commit-composer.
 composer validate........................................................Failed
 - hook id: composer-validate
 - exit code: 1
@@ -64,7 +64,7 @@ In JsonFile.php line 349:
                                                  
   "./composer.lock" does not contain valid JSON  
   Parse error on line 2151:                      
-  ...version": "2.3.0"}foo                       
+  ...version": "2.3.0"}garbage                   
   --------------------^                          
   Expected one of: 'EOF', '}', ',', ']'          
 ```
