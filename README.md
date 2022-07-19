@@ -16,7 +16,7 @@ Add to your `.pre-commit-config.yaml`:
         args: ["--strict"] # Optional ; set any option you want from https://getcomposer.org/doc/03-cli.md#validate
 ```
 
-System-level dependency: [composer](https://github.com/composer/composer).
+System-level dependency: [composer](https://getcomposer.org/download/).
 
 ## How to test it
 
