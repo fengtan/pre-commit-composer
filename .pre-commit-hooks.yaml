@@ -1,0 +1,8 @@
+# See https://pre-commit.com/#new-hooks
+- id: composer-validate
+  name: composer validate
+  description: Validates composer.json and composer.lock
+  entry: composer validate
+  language: system
+  pass_filenames: false
+  files: '^composer.(json|lock)$'
