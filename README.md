@@ -16,6 +16,8 @@ Add to your `.pre-commit-config.yaml`:
         args: ["--strict"] # Optional ; set any option you want from https://getcomposer.org/doc/03-cli.md#validate
 ```
 
+This hook expects `composer` to be locally installed.
+
 ## How to test it
 
 **1. Get an environment with Composer and Pre-commit**
