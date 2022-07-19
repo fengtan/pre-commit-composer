@@ -17,7 +17,7 @@ Add to your `.pre-commit-config.yaml`:
 
 ## How to test it
 
-1. Get an environment with Composer, Git and Pre-commit
+**1. Get an environment with Composer, Git and Pre-commit**
 
 ```sh
 $ docker run --rm -it php:7.4-cli /bin/sh
@@ -28,7 +28,7 @@ $ git config --global user.email "foo@example.com"
 $ git config --global user.name "Foo Bar"
 ```
 
-2. Create a new project with Composer (say, Laravel) and add our pre-commit hook
+**2. Create a new project with Composer (say, Laravel) and add our pre-commit hook**
 
 ```sh
 $ composer create-project laravel/laravel laravel 4.2.* --no-plugins
@@ -44,13 +44,13 @@ EOT
 $ pre-commit install
 ```
 
-3. Simulate an invalid `composer.lock`
+**3. Simulate an invalid `composer.lock`**
 
 ```
 $ echo garbage >> composer.lock
 ```
 
-4. Try to commit -- the hook will run and fail because of the invalid `composer.lock`
+**4. Try to commit: the hook will run and fail because of the invalid `composer.lock`**
 
 ```
 $ git add -A
