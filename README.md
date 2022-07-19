@@ -40,7 +40,7 @@ $ git init
 $ cat <<EOT >> .pre-commit-config.yaml
 repos:
 -   repo: https://github.com/fengtan/pre-commit-composer
-    rev: 1.0.0 # Use the ref you want
+    rev: 1.0.0
     hooks:
     -   id: composer-validate
 EOT
