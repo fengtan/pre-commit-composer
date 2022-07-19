@@ -58,7 +58,6 @@ $ echo garbage >> composer.lock
 ```
 $ git add -A
 $ git commit
-[INFO] Initializing environment for https://github.com/fengtan/pre-commit-composer.
 composer validate........................................................Failed
 - hook id: composer-validate
 - exit code: 1
