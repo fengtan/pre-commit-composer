@@ -13,6 +13,7 @@ Add to your `.pre-commit-config.yaml`:
     rev: 1.0.0 # Use the ref you want
     hooks:
     -   id: composer-validate
+        args: ["--strict"] # Optional ; set any option you want from https://getcomposer.org/doc/03-cli.md#validate
 ```
 
 ## How to test it
